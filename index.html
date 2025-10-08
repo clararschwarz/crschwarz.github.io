@@ -44,9 +44,9 @@
     .hero {
       position: relative;
       min-height: 100svh;
-      background-image: url('/background.jpg?v=3'); /* Zahl erhöhen, wenn du das Bild ersetzt */
+      background-image: url('/background.jpg?v=4'); /* Zahl erhöhen bei neuem Upload */
       background-size: cover;
-      background-position: center center; /* bei Bedarf: left center */
+      background-position: left center; /* Fokus auf Person links, Text im helleren Bereich */
       background-repeat: no-repeat;
       overflow: hidden;
     }
@@ -64,7 +64,7 @@
       position: absolute;
       left: clamp(24px, 5vw, 72px);
       right: clamp(24px, 8vw, 120px);
-      bottom: clamp(40px, 12vh, 180px);
+      bottom: 12vh; /* feinjustierte Textposition */
       max-width: min(900px, 92vw);
       text-shadow: 0 3px 12px var(--shadow);
     }
